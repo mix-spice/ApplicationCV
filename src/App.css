@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Azeret Mono', 'Courier New', monospace;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Use grid layout to split the form and submitted data into two columns */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Space between columns */
+  max-width: 1200px; /* Center the layout */
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Styling for the form-data and submitted-data */
+.form-data, .submitted-data {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual separation */
+  height: auto; /* Automatically adjust the height */
+  overflow-y: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+input[type="submit"] {
+  margin-top: 20px; /* Adjust the value as needed */
+  padding: 10px 20px; /* Optional: Padding for better button sizing */
+  background-color: #4CAF50; /* Optional: Background color */
+  color: white; /* Optional: Text color */
+  border: none; /* Optional: Remove default border */
+  border-radius: 4px; /* Optional: Rounded corners */
+  cursor: pointer; /* Optional: Change cursor to pointer */
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /* Optional: Darken button on hover */
+}
+
+input[type="text"],input[type="email"],input[type="date"]{
+  margin-top: 20px; /* Adjust the value as needed */
+}
+
+textarea{
+  margin-top:20px;
+}
+
+
+/* Form-data section */
+.form-data {
+  align-items: flex-start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Submitted data section */
+.submitted-data {
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Section headings */
+h2 {
+  font-family: 'Azeret Mono', monospace;
+  margin-bottom: 0px;
+}
+
+.section-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ccc; /* Divider below each section title */
+  padding-bottom: 5px;
+}
+
+p, strong {
+  font-family: 'Azeret Mono', monospace;
+}
+
+/* Spacing for general content */
+p {
+  margin: 5px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.submitted-data p {
+  display: block;
+  width: 100%;
+}
+
+.responsibilities {
+  margin-top: 10px;
+  list-style: disc;
+  padding-left: 20px;
+}
+
+#startLabel{
+  display: block; /* Make the label a block element */
+  margin-top: 15px; /* Add top margin */
+}
+
+#finishLabel{
+  display: block; /* Make the label a block element */
+  margin-top: 15px; /* Add top margin */
 }
