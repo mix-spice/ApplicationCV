@@ -19,7 +19,6 @@ A sleek and minimalistic **React-based CV Builder** that allows users to create,
 - Live preview of the CV as you type  
 - One-click export to PDF  
 - Minimal, clean, and user-friendly UI  
-- Responsive design for desktop and mobile  
 - State managed globally via Zustand
 
 ## 🧠 What I Learned
@@ -27,7 +26,7 @@ A sleek and minimalistic **React-based CV Builder** that allows users to create,
 - Creating form-heavy UIs using `React Hook Form`  
 - Structuring scalable React apps with global state (Zustand)  
 - Building custom PDF layouts with `react-to-pdf`  
-- Designing clean and responsive interfaces with Tailwind
+
 
 ## 📦 Getting Started
 
